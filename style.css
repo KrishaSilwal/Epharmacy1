@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Poppins";
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.top2{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo img{
+    width: 450px;
+    height: 140px;
+}
+.search {
+    width: 400px;
+    padding: 70px;
+    height: 40px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 350px;
+}
+
+.babysearch {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    border-radius: 30px;
+    background-color: #C9F3F2;
+    outline: none;
+}
+
+.file {
+    height: 40px;
+    display: flex;
+    border-radius: 30px;
+    background-color: #C9F3F2;
+    outline: none;
+    padding: 0px 5px
+}
+
+.file img {
+    width: 30px;
+}
+
+.babysearch input[type="text"] {
+    width: 400px;
+    font-size: 16px;
+    background-color: #C9F3F2;
+    border: 0;
+    outline: none;
+    border-color: #C9F3F2;
+    color: #0c0c0c;
+}
+
+input[type="text"]::placeholder {
+    color: black;
+
+}
+
+.search input[type="file"] {
+    width: 100px;
+    padding: 10px;
+}
+
+.right {
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.right img {
+    width: 36px;
+    height: 30px;
+}
+
+.cart {
+    width: 36px;
+    height: 38px;
+}
+
+.profile {
+    width: 26px;
+    height: 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 40px;
+    gap: 40px;
+}
+
+ul li a {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main {
+    height: 500px;
+    width: 600px;
+    padding: 20px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 400px;
+}
+
+.formcontainer {
+    gap: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+h1 {
+    color: #A11111;
+}
+
+.formcontainer input {
+    font-size: 20px;
+    border: 1px solid rgb(13, 114, 91);
+    border-radius: 30px;
+
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+    font-size: 20px;
+    color: rgb(13, 114, 91);
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+    font-size: 20px;
+    color: rgb(13, 114, 91);
+}
+
+input[id="email"] {
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+}
+
+input[id="password"] {
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+}
+
+.formcontrol {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: 15px 10px;
+}
+
+input[type="submit"] {
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #45AAA7;
+    outline: none;
+}
+
+.notamember {
+    margin-left: 80px;
+}
+
+
+.main2 {
+    height: 600px;
+    padding: 0px 50px;
+}
+.applybox2{
+    padding: 15px 20px;
+
+}
+.applybox2 h1 {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.formcontainer2 {
+    width: 900px;
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 10px;
+    margin-right: 300px;
+}
+
+.formcontrol2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.formcontrol2 input,select {
+    width: 330px;
+    height: 40px;
+    padding: 10px;
+    gap: 10px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid #0DA6A1;
+}
+.sec-right img{
+    height: 400px;
+    width: 500px;
+}
