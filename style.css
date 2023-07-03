@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&family=Poppins:wght@200;400&family=Roboto:ital,wght@1,100&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,48 +12,46 @@ body {
     font-weight: 300;
     font-family: "Poppins";
 }
-.top{
+
+.top {
     display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
 }
-.top2{
+
+.top2 {
     display: flex;
     justify-content: space-between;
 
 }
-.logo img{
+
+.logo img {
     width: 450px;
     height: 140px;
 }
-.search {
-    width: 400px;
-    padding: 70px;
-    height: 40px;
-    gap: 30px;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 350px;
-}
 
 .babysearch {
-    width: 400px;
-    height: 40px;
-    padding: 10px;
     display: flex;
-    flex-direction: row;
-    gap: 5px;
-    border-radius: 30px;
-    background-color: #C9F3F2;
-    outline: none;
+    width: 400px;
+    padding: 15px 50px 15px 20px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 40px;
+    opacity: 0.5;
+    background: #C9F3F2;
 }
 
 .file {
     height: 40px;
     display: flex;
+    gap: 10px;
     border-radius: 30px;
     background-color: #C9F3F2;
     outline: none;
-    padding: 0px 5px
+    padding: 10px;
+    border: 2px solid #026B81;
+    background: #FFF;
 }
 
 .file img {
@@ -60,8 +60,11 @@ body {
 
 .babysearch input[type="text"] {
     width: 400px;
-    font-size: 16px;
+    font-size: 18px;
     background-color: #C9F3F2;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: bold;
     border: 0;
     outline: none;
     border-color: #C9F3F2;
@@ -100,34 +103,85 @@ input[type="text"]::placeholder {
     height: 30px;
 }
 
-.navbar ul {
+.navbar {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin: 0px 40px;
+    margin: 10px 40px;
     gap: 40px;
 }
 
-ul li a {
+.navbar {
+    border-bottom: 1px solid #BBBBBB;
+}
+
+.nav-link {
     font-weight: bold;
-    color: black;
     font-size: 20px;
-    list-style: none;
+    text-transform: uppercase;
     text-decoration: none;
+    color: #050c15;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #0DA6A1;
+    border-radius: 10px;
+}
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+
+.nav-link-fade-up::before {
+    width: 100%;
+    bottom: 5px;
+    opacity: 0;
+}
+
+.nav-link-fade-up:hover::before {
+    bottom: 10px;
+    opacity: 1;
+}
+
+.nav-link-grow-up::before {
+    height: 0%;
+    width: 100%;
+    bottom: 0px;
+}
+
+.nav-link-grow-up:hover::before {
+    height: 5px;
 }
 
 .main {
     height: 500px;
     width: 600px;
-    padding: 20px;
-    margin: 20px 40px;
+    margin: 40px;
     display: flex;
     justify-content: space-between;
     gap: 400px;
 }
 
 .formcontainer {
-    gap: 15px;
+    gap: 20px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -148,40 +202,69 @@ h1 {
 .email {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    align-items: flex-start;
     gap: 10px;
-    font-size: 20px;
-    color: rgb(13, 114, 91);
+}
+
+.email label {
+    color: #026B81;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .password {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    align-items: flex-start;
     gap: 10px;
-    font-size: 20px;
-    color: rgb(13, 114, 91);
+}
+
+.password label {
+    color: #026B81;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
 }
 
 input[id="email"] {
-    width: 400px;
-    height: 30px;
-    padding: 10px;
+    display: flex;
+    width: 458px;
+    padding: 16px 100px 16px 20px;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 input[id="password"] {
-    width: 400px;
-    height: 30px;
-    padding: 10px;
+    display: flex;
+    width: 458px;
+    padding: 16px 100px 16px 20px;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .formcontrol {
     display: flex;
-    flex-direction: row;
+    width: 414px;
+    justify-content: center;
+    align-items: center;
     gap: 100px;
-    margin: 15px 10px;
 }
+input[id="keep-me-logged"]{
+    height: 20px;
+    width: 20px;
 
+}
+.loginn{
+    align-items: center;
+    gap: 10px;
+}
+.loginn label{
+    font-size: 14px;
+}
+.formcontrol p {
+    font-size: 14px;
+}
 input[type="submit"] {
     width: 400px;
     height: 40px;
@@ -193,8 +276,14 @@ input[type="submit"] {
     outline: none;
 }
 
+.pic img {
+    height: 400px;
+}
+
 .notamember {
     margin-left: 80px;
+    font-size: medium;
+    font-weight: 500;
 }
 
 
@@ -202,10 +291,12 @@ input[type="submit"] {
     height: 600px;
     padding: 0px 50px;
 }
-.applybox2{
+
+.applybox2 {
     padding: 15px 20px;
 
 }
+
 .applybox2 h1 {
     font-size: 30px;
     display: flex;
@@ -225,18 +316,31 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
     font-size: 20px;
+    font-size: large;
+    font-weight: 500;
 }
 
-.formcontrol2 input,select {
+.formcontrol2 input,
+select {
     width: 330px;
-    height: 40px;
     padding: 10px;
-    gap: 10px;
     font-size: 16px;
     border-radius: 30px;
     border: 1px solid #0DA6A1;
 }
-.sec-right img{
+
+.formcontrol3 input,
+label {
+    font-size: medium;
+    font-weight: 500;
+}
+
+.sec-right img {
     height: 400px;
     width: 500px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,23 +15,20 @@
             <img src="/IMAGES/logo.jpg" alt="Image">
 
         </div>
-
-        <div class="search">
-            <div class="babysearch">
-                <img src="searchbar.svg" alt="">
-                <input type="text" name="search" placeholder="Search...">
-            </div>
-            <div class="file">
-                <img src="camera-icon.svg" alt="camera-icon-png-greens">
-                <input type="file" name="prescription" placeholder="Uplaod Prescription">
-            </div>
+        <div class="babysearch">
+            <img src="searchbar.svg" alt="">
+            <input placeholder="Search.." id="input" class="input" name="text" type="text">
+        </div>
+        <div class="file">
+            <img src="camera-icon.svg" alt="camera-icon-png-greens">
+            <input type="file" name="prescription" placeholder="Uplaod Prescription">
         </div>
         <div class="right">
             <div><img src="/Vector.svg" alt=""></div>
             <div class="cart">
                 <a href="">
                     <img src="solar_cart-large-minimalistic-outline.svg" alt="">
-                </a>   
+                </a>
             </div>
             <div class="profile">
                 <a href="">
@@ -42,19 +39,12 @@
     </div>
 
     <div class="navbar">
-        <ul>
-            <li><a href="home">Home</a></li>
-
-            <li><a href="medicine">Medicine</a></li>
-
-            <li><a href="personal care">Personal Care</a></li>
-
-            <li><a href="supplements">Supplements</a></li>
-
-            <li><a href="devices">Device</a></li>
-
-            <li><a href="first aid">First Aid</a></li>
-        </ul>
+        <a class="nav-link nav-link-grow-up" href="#">Home</a>
+        <a class="nav-link nav-link-grow-up" href="#">Medicine</a>
+        <a class="nav-link nav-link-grow-up" href="#">Personal Care</a>
+        <a class="nav-link nav-link-grow-up" href="#">Supplements</a>
+        <a class="nav-link nav-link-grow-up" href="#">Devices</a>
+        <a class="nav-link nav-link-grow-up" href="#">First Aid</a>
     </div>
 
     <div class="main">
@@ -73,7 +63,7 @@
                     </div>
 
                     <div class="formcontrol">
-                        <div class="login">
+                        <div class="loginn">
                             <input type="checkbox" id="keep-me-logged" name="keep-me-logged">
                             <label for="keep-me-logged">Keep me logged in</label>
                         </div>
