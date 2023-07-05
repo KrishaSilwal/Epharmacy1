@@ -164,7 +164,21 @@ input[type="text"]::placeholder {
 }
 
 .leftt {
-    padding: 30px;
+    padding: 60px;
+}
+
+.leftt h3 {
+
+    color: #A11111;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.leftt p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
 }
 
 .main {
@@ -174,7 +188,7 @@ input[type="text"]::placeholder {
 
 .formcontainer {
     width: 900px;
-    padding: 20px 0px;
+    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 10px;
@@ -203,6 +217,7 @@ select {
 .formcontrol3 {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
     font-size: 20px;
     font-size: large;
 }
@@ -219,8 +234,73 @@ select {
     border: 1px solid #0DA6A1;
 }
 
-.order {
+.shipping {
+    margin-top: 40px;
+    width: 700px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 1px solid #DBDBDB;
+}
 
+.shippingtype form {
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ship1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shippingtype label {
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.shippingtype label input {
+    position: absolute;
+    left: -9999px;
+}
+
+.shippingtype label input:checked+span {
+    background-color: #6eb271;
+    color: white;
+}
+
+.shippingtype label input:checked+span:before {
+    box-shadow: inset 0 0 0 0.4375em #216820;
+}
+
+.shippingtype label span {
+    display: flex;
+    align-items: center;
+    padding: 0.375em 0.75em 0.375em 0.375em;
+    border-radius: 99em;
+    transition: 0.25s ease;
+    color: #216820;
+}
+
+.shippingtype label span:hover {
+    background-color: #d6d6e5;
+}
+
+.shippingtype label span:before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.375em;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.125em #0e8210;
+}
+
+.order {
     display: flex;
     width: 400px;
     padding: 25px 50px;
@@ -262,4 +342,7 @@ select {
     border-radius: 24px;
     border: 1px solid #DEDEDE;
     gap: 30px;
+}
+formcontainerr{
+    gap: 40px;
 }

@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div class="box">
+            <i class="fa fa-check-circle" style="font-size:48px;color:white"></i>
+            <div class="center">
+                <p class="msg">Thankyou for your order ! </p>
+                <p class="message">Your package will be delivered within 2 days of your purchase</p>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .alert {
+        margin-top: 100px;
+        padding: 30px;
+        background-color: #8bc15c;
+        color: white;
+        width: fit-content;
+        margin: auto;
+        width: 60%;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .box i {
+        margin: auto;
+    }
+
+    .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 60%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .closebtn:hover {
+        color: black;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .center {
+        margin: auto;
+    }
+
+    .msg {
+        padding-left: 36%;
+    }
+</style>
+
+</html>
