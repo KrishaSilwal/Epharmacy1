@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="/IMAGES/logo.jpg" alt="Image">
+        </div>
+
+        <div class="search">
+            <div class="babysearch">
+                <img src="searchbar.svg" alt="">
+                <input type="text" name="search" placeholder="Search...">
+            </div>
+            <div class="file">
+                <img src="camera-icon.svg" alt="camera-icon-png-greens">
+                <input type="file" name="prescription" placeholder="Uplaod Prescription">
+            </div>
+        </div>
+        <div class="right">
+            <div><img src="/Vector.svg" alt=""></div>
+            <div class="cart">
+                <a href="">
+                    <img src="solar_cart-large-minimalistic-outline.svg" alt="">
+                </a>
+            </div>
+            <div class="profile">
+                <a href="">
+                    <img src="Profile.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <a class="nav-link nav-link-grow-up" href="#">Home</a>
+        <a class="nav-link nav-link-grow-up" href="#">Medicine</a>
+        <a class="nav-link nav-link-grow-up" href="#">Personal Care</a>
+        <a class="nav-link nav-link-grow-up" href="#">Supplements</a>
+        <a class="nav-link nav-link-grow-up" href="#">Devices</a>
+        <a class="nav-link nav-link-grow-up" href="#">First Aid</a>
+    </div>
+    <div class="main">
+        <div class="leftt">
+            <h3>Check out and Payment</h3>
+            <p>Fill in the details</p>
+            <div class="formcontainer">
+                <div class="formcontrol2">
+                    <label for="country">Country</label>
+                    <select type="country" name="Country">
+                        <option value="select">Select Country</option>
+                        <option value="Nepal">Eastern</option>
+                    </select>
+                </div>
+                <div class="formcontrol2">
+                    <label for="state">State/Province</label>
+                    <select type="state" name="state">
+                        <option value="select">Select state/province</option>
+                        <option value="Nepal">Province No 1</option>
+                        <option value="Nepal">Madhesh Pradesh</option>
+                        <option value="Nepal">Bagmati Pradesh</option>
+                        <option value="Nepal">Gandaki Pradesh</option>
+                        <option value="Nepal">Lumbini Pradesh</option>
+                        <option value="Nepal">Karnali Pradesh</option>
+                        <option value="Nepal">Sudur Pashchim Pradesh</option>
+                    </select>
+                </div>
+                <div class="formcontrol2">
+                    <label for="region">City</label>
+                    <select type="region" name="City">
+                        <option value="select">Select City</option>
+                        <option value="Nepal">Kathmandu</option>
+                        <option value="Nepal">Pokhara</option>
+                        <option value="Nepal">Janakpur</option>
+                        <option value="Nepal">Bharatpur</option>
+                        <option value="Nepal">Nepalgunj</option>
+                    </select>
+                </div>
+                <div class="formcontrol2">
+                    <label for="region">Region</label>
+                    <select type="region" name="region">
+                        <option value="select">Select region</option>
+                        <option value="Nepal">Eastern</option>
+                        <option value="Nepal">Central</option>
+                        <option value="Nepal">Western</option>
+                        <option value="Nepal">Mid-Western</option>
+                        <option value="Nepal">Far-Western</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formcontrol3">
+                <label for="email">Street name and House number</label>
+                <input type="street" name="street" placeholder="Enter your street name and house number">
+            </div>
+            <div class="formcontainer">
+                <div class="formcontrol2">
+                    <label for="email">Email</label>
+                    <input type="email" name="Email" placeholder="Enter Email">
+                </div>
+                <div class="formcontrol2">
+                    <label for="Phone">Phone Number</label>
+                    <input type="number" name="phone number" placeholder="Enter your phone number">
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="rightt">
+            <div class="order">
+                <h4>Your Order</h4>
+                <div class="sub">
+                    <h5>Subtotal</h5>
+                    <p>Rs 33,897</p>
+                </div>
+                <div class="sub">
+                    <h5>Discount</h5>
+                    <p>Rs 230</p>
+                </div>
+                <div class="sub">
+                    <h5>Delivery Cost</h5>
+                    <p>Rs 100</p>
+                </div>
+                <div class="sub">
+                    <h5>Grand Total</h5>
+                    <p>Rs 33,767</p>
+                </div>
+            </div>
+            <div class="payment">
+                <h4>Payment Options</h4>
+                <div class="formcontainerr">
+                    <div class="formcontrol2">
+                        <label for="email">Card number</label>
+                        <input type="email" name="Email" placeholder="Enter your card number">
+                    </div>
+                    <div class="formcontrol2">
+                        <label for="Phone">Name on card</label>
+                        <input type="number" name="phone number" placeholder="Enter the name on card">
+                    </div>
+                    <div class="formcontrol2">
+                        <label for="Date">Expiration date</label>
+                        <input type="Date" id="Date" name="Enter Date">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

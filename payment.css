@@ -16,32 +16,38 @@ body {
 
 .top {
     display: flex;
-    display: inline-flex;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    width: 400px;
+    padding: 70px;
+    height: 40px;
     gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 350px;
 }
 
 .babysearch {
-    display: flex;
     width: 400px;
-    padding: 15px 50px 15px 20px;
-    align-items: center;
-    gap: 20px;
-    border-radius: 40px;
-    opacity: 0.5;
-    background: #C9F3F2;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    border-radius: 30px;
+    background-color: #C9F3F2;
+    outline: none;
 }
 
 .file {
     height: 40px;
     display: flex;
-    gap: 10px;
     border-radius: 30px;
     background-color: #C9F3F2;
     outline: none;
-    padding: 10px;
-    border: 2px solid #026B81;
-    background: #FFF;
+    padding: 0px 5px
 }
 
 .file img {
@@ -50,11 +56,8 @@ body {
 
 .babysearch input[type="text"] {
     width: 400px;
-    font-size: 18px;
+    font-size: 16px;
     background-color: #C9F3F2;
-    font-size: 18px;
-    font-family: "Poppins";
-    font-weight: bold;
     border: 0;
     outline: none;
     border-color: #C9F3F2;
@@ -74,7 +77,6 @@ input[type="text"]::placeholder {
 .right {
     padding: 70px;
     display: flex;
-    flex-direction: row;
     gap: 20px;
 }
 
@@ -161,155 +163,103 @@ input[type="text"]::placeholder {
     height: 5px;
 }
 
-.head {
+.leftt {
+    padding: 30px;
+}
+
+.main {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 70px;
-}
-
-.head h2 {
-    color: #A11111;
-}
-
-.sort {
-    display: flex;
-    gap: 30px;
-}
-
-.sort img {
-    width: 50px;
-    height: 50px;
-    flex-shrink: 0;
-    border-radius: 8px;
-}
-
-.sortby {
-    display: flex;
-    gap: 10px;
-    padding: 10px 10px;
-    border-radius: 20px;
-    background: #0DA6A1;
-}
-
-.sortby p {
-    font-size: medium;
-}
-
-.row {
-    margin-left: 60px;
-    display: flex;
-    gap: 80px;
-    align-items: center;
-    margin-bottom: 40px;
- 
-}
-
-.med1 img {
-    width: 198px;
-    height: 263px;
-    border-radius: 10px;
-border: 1px solid #E2E2E2;
-}
-
-.descrip {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.descrip h3 {
-    color: #000;
-    font-size: 27px;
-    font-weight: 500;
-    letter-spacing: 0.6px;
-}
-
-.descrip h4 {
-    color: #0DA6A1;
-    font-size: 23px;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.descrip p {
-    color: #000;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.side1 {
-    display: flex;
-    gap: 20px;
-}
-
-.div1 {
-    display: flex;
-    padding: 12px;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    border-radius: 16px;
-    border: 2.4px solid #0DA6A1;
-}
-
-.div2 {
-    display: flex;
-    padding: 12px;
     flex-direction: row;
-    align-items: center;
+}
+
+.formcontainer {
+    width: 900px;
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 10px;
+    font-family: "Poppins";
+}
+
+.formcontrol2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-size: large;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+.formcontrol2 input,
+select {
+    width: 330px;
+    padding: 14px;
+    font-size: 16px;
     border-radius: 30px;
-    border: 2.4px solid #45AAA7;
+    border: 1px solid #0DA6A1;
+    font-family: "Poppins";
 }
-.footer {
+
+.formcontrol3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-size: large;
+}
+
+.formcontrol3 label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.formcontrol3 input {
+    width: 483px;
+    padding: 16px 60px 16px 20px;
+    border-radius: 30px;
+    border: 1px solid #0DA6A1;
+}
+
+.order {
+
+    display: flex;
+    width: 400px;
+    padding: 25px 50px;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+    border: 1px solid #D9D9D9;
+}
+
+.order h4 {
+    color: #A11111;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.sub {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
-    gap: 10px;
+    gap: 90px;
 }
 
-.gmail {
+.sub h5 {
+    color: #6B6B6B;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sub p {
+    color: #1D434A;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.payment {
+    margin-top: 30px;
     display: flex;
-    gap: 10px;
-    padding: 10px 0px;
-}
-
-.contact,
-.aboutus {
-    font-size: 14px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.contact h3,
-.aboutus h3 {
-    padding-bottom: 10px;
-    color: #0DA6A1;
-}
-
-.aboutus p {
-    font-size: 14px;
-    padding: 10px 0px;
-}
-
-.copyright {
-    padding: 10px 0px;
-    color: black;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.PTC {
-    display: flex;
-    justify-content: space-between;
-}
-
-.pp a,
-.tc a,
-.cs a {
-    color: #0DA6A1;
+    padding: 30px 20px;
+    flex-direction: column;
+    border-radius: 24px;
+    border: 1px solid #DEDEDE;
+    gap: 30px;
 }

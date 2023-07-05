@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script data-require="jquery@3.1.1" data-semver="3.1.1"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="/IMAGES/logo.jpg" alt="Image">
+
+        </div>
+        <div class="babysearch">
+            <img src="searchbar.svg" alt="">
+            <input placeholder="Search.." id="input" class="input" name="text" type="text">
+        </div>
+        <div class="file">
+            <img src="camera-icon.svg" alt="camera-icon-png-greens">
+            <input type="file" name="prescription" placeholder="Uplaod Prescription">
+        </div>
+        <div class="right">
+            <div><img src="/Vector.svg" alt=""></div>
+            <div class="cart">
+                <a href="">
+                    <img src="solar_cart-large-minimalistic-outline.svg" alt="">
+                </a>
+            </div>
+            <div class="profile">
+                <a href="">
+                    <img src="Profile.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a class="nav-link nav-link-grow-up" href="#">Home</a>
+        <a class="nav-link nav-link-grow-up" href="#">Medicine</a>
+        <a class="nav-link nav-link-grow-up" href="#">Personal Care</a>
+        <a class="nav-link nav-link-grow-up" href="#">Supplements</a>
+        <a class="nav-link nav-link-grow-up" href="#">Devices</a>
+        <a class="nav-link nav-link-grow-up" href="#">First Aid</a>
+    </div>
+    <div class="main">
+        <div class="cartt">
+            <div class="top1">
+                <h3>Cart</h3>
+                <div class="empty">
+                    <img src="IMAGES/mdi-light_delete.jpg" alt="">
+                    <p>Empty All</p>
+                </div>
+            </div>
+            <div class="head">
+                <div class="leftt">
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <h3>Product</h3>
+                </div>
+                <div class="rightt">
+                    <h3>Quantity</h3>
+                    <h3>Price</h3>
+                </div>
+            </div>
+            <div class="row1">
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <div class="med-1">
+                    <img src="IMAGES/image 24.png" alt="">
+                </div>
+                <div class="para">
+                    <h3>Neopeptine Syrup 100ml Bottle</h3>
+                    <p>Ingredients: Alpha amylase, papain, flavored base. Please see pack shot for more details about
+                        the product.</p>
+                    <div class="ld">
+                        <div class="like">
+                            <img src="IMAGES/Vector.jpg" alt="">
+                        </div>
+                        <div class="del">
+                            <img src="IMAGES/mdi-light_delete-Black.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                        name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                        inputmode=""><input type="button" value="+" class="plus">
+                </div>
+                <div class="price">
+                    <p>Rs.315</p>
+                </div>
+            </div>
+            <div class="row1">
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <div class="med-1">
+                    <img src="IMAGES/image 24.png" alt="">
+                </div>
+                <div class="para">
+                    <h3>Neopeptine Syrup 100ml Bottle</h3>
+                    <p>Ingredients: Alpha amylase, papain, flavored base. Please see pack shot for more details about
+                        the product.</p>
+                    <div class="ld">
+                        <div class="like">
+                            <img src="IMAGES/Vector.jpg" alt="">
+                        </div>
+                        <div class="del">
+                            <img src="IMAGES/mdi-light_delete-Black.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                        name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                        inputmode=""><input type="button" value="+" class="plus">
+                </div>
+                <div class="price">
+                    <p>Rs.315</p>
+                </div>
+            </div>
+            <div class="row1">
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <div class="med-1">
+                    <img src="IMAGES/image 24.png" alt="">
+                </div>
+                <div class="para">
+                    <h3>Neopeptine Syrup 100ml Bottle</h3>
+                    <p>Ingredients: Alpha amylase, papain, flavored base. Please see pack shot for more details about
+                        the product.</p>
+                    <div class="ld">
+                        <div class="like">
+                            <img src="IMAGES/Vector.jpg" alt="">
+                        </div>
+                        <div class="del">
+                            <img src="IMAGES/mdi-light_delete-Black.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                        name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                        inputmode=""><input type="button" value="+" class="plus">
+                </div>
+                <div class="price">
+                    <p>Rs.315</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <h3>Summary</h3>
+            <div class="subtotal">
+                <p>
+                    Sub-total
+                </p>
+                <p1>
+                    Rs 33,865
+                </p1>
+            </div>
+            <div class="purchasetype">
+                <h4> Purchase Type</h4>
+                <form>
+                    <label>
+                        <input tyspe="radio" name="radio" checked="">
+                        <span>Normal</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>Refill</span>
+                    </label>
+                </form>
+            </div>
+            <div class="coupon">
+                <h4>Purchase Type</h4>
+                <input type="text" id="text" placeholder="Discount Code Here">
+                <p>Apply Code</p>
+            </div>
+            <div class="disc">
+                <p>Discount</p>
+                <p>Rs.230</p>
+            </div>
+            <div class="gt">
+                <h4>Grand Total</h4>
+                <p>Rs.33,430</p>
+            </div>
+            <div class="co">
+                Check out
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
