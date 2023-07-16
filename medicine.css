@@ -7,6 +7,10 @@
     font-family: "Poppins";
 }
 
+a {
+    text-decoration: none;
+}
+
 html,
 body {
     line-height: 1.4;
@@ -33,7 +37,8 @@ body {
 }
 
 .file {
-    height: 40px;
+    height: 60px;
+    width: 160px;
     display: flex;
     gap: 10px;
     border-radius: 30px;
@@ -46,6 +51,9 @@ body {
 
 .file img {
     width: 30px;
+}
+.right-main{
+    margin-left: 70px;
 }
 
 .babysearch input[type="text"] {
@@ -254,25 +262,26 @@ input[type="text"]::placeholder {
 }
 
 .num {
-    height: 50px;
-    width: 1060;
+    height: 90px;
     display: flex;
-    padding: 20px 40px;
+    padding: 20px 120px;
     justify-content: space-between;
 }
 
 .nu {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    gap: 40px;
 }
-.nu p{
+
+.nu p {
     display: flex;
-padding: 12px 24px;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
+    padding: 12px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
     border-radius: 20px;
-border: 2px solid #0DA6A1;
+    border: 2px solid #0DA6A1;
 }
 
 .nu2 {
@@ -291,6 +300,7 @@ border: 2px solid #0DA6A1;
     font-size: 20px;
     font-weight: 500;
 }
+
 .footer {
     display: flex;
     justify-content: space-between;
